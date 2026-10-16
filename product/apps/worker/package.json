@@ -1,0 +1,20 @@
+{
+  "name": "@outfit/worker",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@outfit/config": "workspace:*",
+    "@outfit/db": "workspace:*",
+    "postgres": "^3.4.7"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.5"
+  }
+}

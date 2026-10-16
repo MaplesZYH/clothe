@@ -1,0 +1,22 @@
+{
+  "name": "@outfit/domain",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./upload": "./src/upload.ts",
+    "./anonymous-session": "./src/anonymous-session.ts",
+    "./advice": "./src/advice.ts",
+    "./processing": "./src/processing.ts"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "lint": "eslint src test",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  }
+}
